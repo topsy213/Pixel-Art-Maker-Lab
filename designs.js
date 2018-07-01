@@ -14,7 +14,9 @@ the page or window is reloaded.
 	rows = $('#inputHeight').val();
 	cols = $('#inputWeight').val();
 	
-	//$('#pixelCanvas').empty();
+	//This would prevent a new grid from being appended to the present table when the submit button is clicked.
+	
+	$('#pixelCanvas').empty();
 	
 	
 	makeGrid(rows, cols);
